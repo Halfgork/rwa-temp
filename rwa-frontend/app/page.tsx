@@ -51,52 +51,57 @@ export default function Dashboard() {
         <Header />
         <main className="container mx-auto px-4 py-8">
           <div className="flex flex-col items-center justify-center min-h-[calc(100vh-120px)] space-y-8">
-            <div className="text-center space-y-4 max-w-2xl">
-              <h1 className="text-4xl font-bold tracking-tight">
-                Real World Asset Investment Platform
-              </h1>
+        <div className="text-center space-y-4 max-w-2xl">
+          <img
+            src="/starly_logo.png"
+            alt="Starly Logo"
+            className="mx-auto mb-0.5 h-100 w-100"
+          />
+          <h1 className="text-4xl font-bold tracking-tight">
+            Earn Tokens By Completing Tasks
+          </h1>
               <p className="text-xl text-muted-foreground">
-                Access tokenized real estate, commodities, and other physical assets 
-                through compliant blockchain technology on Stellar.
+                A decentralized reward platform built on the 
+                Stellar blockchain where users earn tokens through task completion and staking, powered by Soroban smart contracts.
               </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-3xl">
-              <Card className="text-center">
+              <Card className="text-center transition-colors duration-200 hover:bg-neutral-900 hover:border-white hover:shadow-lg border border-neutral-800 bg-neutral-950">
                 <CardHeader>
-                  <Building2 className="h-12 w-12 mx-auto text-primary" />
-                  <CardTitle className="text-lg">Tokenized Assets</CardTitle>
+                  <Building2 className="h-12 w-12 mx-auto text-white" />
+                  <CardTitle className="text-lg text-white">Join Task</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Invest in premium real estate and other assets through blockchain tokens
+                  <p className="text-sm text-neutral-400">
+                    Earn tokens by completing on-chain tasks and accessing exclusive Web3 reward campaigns.
                   </p>
                 </CardContent>
               </Card>
-              
-              <Card className="text-center">
+
+              <Card className="text-center transition-colors duration-200 hover:bg-neutral-900 hover:border-white hover:shadow-lg border border-neutral-800 bg-neutral-950">
                 <CardHeader>
-                  <CheckCircle className="h-12 w-12 mx-auto text-green-600" />
-                  <CardTitle className="text-lg">Compliant</CardTitle>
+                  <CheckCircle className="h-12 w-12 mx-auto text-white" />
+                  <CardTitle className="text-lg text-white">Compliant</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-neutral-400">
                     KYC verification and regulatory compliance built into every transaction
                   </p>
                 </CardContent>
               </Card>
               
-              <Card className="text-center">
+                <Card className="text-center transition-colors duration-200 hover:bg-neutral-900 hover:border-white hover:shadow-lg border border-neutral-800 bg-neutral-950">
                 <CardHeader>
-                  <TrendingUp className="h-12 w-12 mx-auto text-blue-600" />
-                  <CardTitle className="text-lg">High Yield</CardTitle>
+                  <TrendingUp className="h-12 w-12 mx-auto text-white" />
+                  <CardTitle className="text-lg text-white">High Yield</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Earn passive income through rental yields and asset appreciation
+                  <p className="text-sm text-neutral-400">
+                  Earn passive income through rental yields and asset appreciation
                   </p>
                 </CardContent>
-              </Card>
+                </Card>
             </div>
           </div>
         </main>
